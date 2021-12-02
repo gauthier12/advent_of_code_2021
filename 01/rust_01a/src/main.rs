@@ -17,13 +17,13 @@ fn main() {
                 let new_val = ip.parse::<i32>().unwrap();
                 if new_val > prec_val
                 {
-                    println!("Plus grand");
+//                    println!("Plus grand");
                     n_inc += 1;
                 }
-                else
-                {
-                    println!("Plus petit");
-                }
+//                else
+//                {
+//                    println!("Plus petit");
+//                }
                 prec_val = new_val;
             }
         }
