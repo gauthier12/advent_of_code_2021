@@ -45,5 +45,13 @@ fn main() {
             epsilon+=1
         }
     }
+    let lines: Vec<_>  = contents.lines().collect();
+    let mut line_list: Vec<usize> = (0..tot as usize).collect();
+    line_list.swap_remove(5);
     println!("power consumption {}", gamma * epsilon);
+    for ele in line_list
+    {
+        println!("{}",lines[ele]);
+    }
+
 }
